@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Temporizador estilo pomodoro">
+  <title>Focus Timer 2.0</title>
+  <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script type="module" src="./js/main.js" defer></script>
+</head>
+<body>
+  <div id="app">
+    <button id="toggle-mode">
+      <span class="sr-only">Ativar Light Mode</span>
+      <i class="ph-bold ph-sun"></i>
+      <i class="ph-bold ph-moon"></i>
+    </button>
+    <div class="container">
+      <section class="container-fluid">
+        <section id="timer" class="flex">
+          <span id="minutes">00</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </section>
+        <section id="controls" class="flex">
+          <button data-action="toggleRunning" class="ph ph-play"><span class="sr-only">Iniciar contador</span></button>
+          <button data-action="toggleRunning" class="ph ph-pause"><span class="sr-only">Pausar contador</span></button>
+          <button data-action="set" class="ph ph-timer"><span class="sr-only">Ajustar contador</span></button>
+          <button data-action="moreMinutes" class="ph ph-plus"><span class="sr-only">Aumentar tempo</span></button>
+          <button data-action="lessMinutes" class="ph ph-minus"><span class="sr-only">Diminuir tempo</span></button>
+        </section>
+      </section>
+        <section id="music-controls">
+          <button data-action="toggleRunning" class="ph ph-tree-evergreen"><span class="sr-only">Iniciar contador</span></button>
+          <button data-action="toggleRunning" class="ph ph-cloud-snow"><span class="sr-only">Pausar contador</span></button>
+          <button data-action="set" class="ph ph-coffee"><span class="sr-only">Ajustar contador</span></button>
+          <button data-action="reset" class="ph ph-fire"><span class="sr-only">Reiniciar contador</span></button>
+        </section>
+    </div>
+
+  </div>
+</body>
+</html>
